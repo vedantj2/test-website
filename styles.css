@@ -1,0 +1,154 @@
+
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .first-face{
+    width: 100%;
+    background-color: blue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .second-face{
+    background-color: green;
+    height: 100%;
+  }
+  
+  .hero h1{  
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 4px;
+    color: #E74646; 
+  } 
+  span{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
+  @media all and (max-width: 500px){
+    .first-face{
+      height: 30vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero{
+      margin-top: 200px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .content1 {
+      position: relative; /* make the container positioned relatively */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+    }
+    .content2 {
+      margin-top: 0%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; 
+      align-items: center;
+      height: 10vh;
+    }
+  
+  
+  }
+  
+  @media all and (max-width: 820px){
+  
+  }
+  
+  
+  
+  .content1 {
+    position: relative; /* make the container positioned relatively */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+  }
+  .content2 {
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .content3 {
+    position: relative; /* make the container positioned relatively */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+  }
+  
+  .content4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .content5{
+    position: relative; /* make the container positioned relatively */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .path {
+    fill: none;
+    stroke: #E74646;
+    stroke-width: 3px;
+  }
+  
+  .path2 {
+    stroke-width: 3px;
+  stroke: #E74646;
+  }
+  
+  .path3 {
+    stroke: #E74646;
+  }
+  
+  .path4{
+      stroke: #E74646;
+  }
+  
+  .path5{
+    stroke-width: 2px;
+    stroke: #E74646;
+  }
+  
+  .path6{
+    stroke-width: 2px;
+    stroke: #E74646;
+  }
+  
+  .info1{
+    font-family: 'Tisa Sans Pro', sans-serif;
+    letter-spacing: 1px;
+    max-width: 400px;
+    color: black;
+  }
+  
+  .P{
+    color: black;
+    opacity: 0;
+    position: relative;
+    bottom: -40px;
+    transition: all 0.8s ease-out;
+  }
+  
+  .show{
+    opacity: 1;
+    bottom: 0;
+  }
