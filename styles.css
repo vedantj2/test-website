@@ -1,4 +1,6 @@
-
+body{
+    background-color: #FFE5CA;
+}
 
 body::-webkit-scrollbar {
     display: none;
@@ -6,7 +8,6 @@ body::-webkit-scrollbar {
   
   .first-face{
     width: 100%;
-    background-color: blue;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,7 +15,6 @@ body::-webkit-scrollbar {
   }
   
   .second-face{
-    background-color: green;
     height: 100%;
   }
   
