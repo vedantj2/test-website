@@ -32,47 +32,6 @@ body::-webkit-scrollbar {
     letter-spacing: 2px;
   }
   
-  @media all and (max-width: 500px){
-    .first-face{
-      height: 70vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .hero{
-      margin-top: 200px;
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-    .content1 {
-
-      position: relative; /* make the container positioned relatively */
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 20px;
-    }
-    .content2 {
-      margin-top: 0%;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column; 
-      align-items: center;
-      height: 10vh;
-    }
-
-    .info1{
-        color: black;
-        padding: 30px;
-      } 
-  }
-  
-  @media all and (max-width: 820px){
-  
-  }
-  
-  
-  
   .content1 {
     position: relative; /* make the container positioned relatively */
     display: flex;
@@ -158,4 +117,54 @@ body::-webkit-scrollbar {
   .show{
     opacity: 1;
     bottom: 0;
+  }
+
+
+  @media all and (max-width: 500px){
+    .first-face{
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero{
+      margin-top: 200px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .content1 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: auto;
+    }
+    .content2 {
+      margin-top: 0%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; 
+      align-items: center;
+      height: 100vh;
+    }
+
+    .content4 {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; 
+      align-items: center;
+      height: 80vh;
+    }
+
+    .content5{
+      display: flex;
+      flex-direction: column-reverse; 
+      justify-content: space-between; 
+      align-items: center;
+      height: 70vh;
+    }
+
+    .info1{
+        color: black;
+        padding: 30px;
+      } 
   }
