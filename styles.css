@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 }
 
 .second-face{
-  background-image: linear-gradient(#FFE5CA,#E74646);
+  background-image: linear-gradient(#FFE5CA,#E7A67D,#E74646);
   height: 100%;
 }
 
@@ -171,108 +171,6 @@ span{
 }
 
 
-.third-face{
-  height: 100vh;
-  background-color: #E74646;
-}
-
-.projectGrid{
-  margin: 0;
-  background-color: #E74646;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.card{
-  position: relative;
-  cursor: pointer;
-  width: 300px; 
-}
-
-.face1{
-  
-  position: relative;
-  width: 300px;
-  height: 200px;
-  background-color: #FFE5CA;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  transform: translateY(100px);
-  z-index: 1;
-  border-radius: 15px;
-}
-
-.card:hover .face1{
-  background-color: #FA9884;
-  transform: translateY(0);
-  border-radius: 15px 15px 0 0;
-}
-
-.face2{
-  border-radius: 15px;
-  position: relative;
-  width: 300px;
-  height: 200px;
-  background-color: wheat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 20px;
-  transition: 0.5s;
-  transform: translateY(-100px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-}
-
-.card:hover .face2{
-  transform: translateY(0);
-  border-radius: 0 0 15px 15px;
-}
-
-.imgbox{
-  opacity: 1;
-  transition: 0.5s;
-}
-
-.card:hover .imgbox{
-  opacity: 1;
-}
-
-.face1 img{
-  width: 100px;
-}
-
-.Third-face-title{
-  margin: 10px 0 0;
-  padding: 0;
-  color: black;
-  text-align: center;
-  font-size: 25px;
-}
-
-.para{
-  margin: 0;
-  padding: 0;
-}
-
-.readmore{
-  margin: 15px 0 0;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 900;
-  color: black;
-  padding: 5px;
-  border: 1px solid wheat;
-}
-
-.readmore:hover{
-  background-color: #E74646;
-  color: black;
-}
 
 .text-box{
   color: #E74646;
@@ -360,4 +258,11 @@ span{
   color: #E74646;
 }
 
+.fifth-face{
+  height: 100%;
+  background-image: linear-gradient(#172E36, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
