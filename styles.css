@@ -1,5 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+
 html,body{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body{
   background-color: #FFE5CA;
@@ -174,7 +184,6 @@ span{
 
 .text-box{
   color: #E74646;
-  bottom: 8%;
 }
 
 .text-box .AAA{
@@ -210,53 +219,6 @@ span{
   border: 2px solid #E74646;
 }
 
-
-.sfu-link {
-  overflow: hidden;
-  position: relative;
-}
-.sfu-link::before,
-.sfu-link::after {
- content: '';
-  position: absolute;
-  width: 100%;
-  left: 0;
-}
-.sfu-link::before {
-  background-color: #FA9884;
-  height: 2px;
-  bottom: 0;
-  transform-origin: 100% 50%;
-  transform: scaleX(0);
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.sfu-link::after {
-  content: attr(data-replace);
-  height: 100%;
-  top: 0;
-  transform-origin: 100% 50%;
-  transform: translate3d(200%, 0, 0);
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #FA9884;
-}
-.sfu-link:hover::before {
-  transform-origin: 0% 50%;
-  transform: scaleX(1);
-}
-.sfu-link:hover::after {
-  transform: translate3d(0, 0, 0);
-}
-.sfu-link span {
-  display: inline-block;
-  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-}
-.sfu-link:hover span {
-  transform: translate3d(-200%, 0, 0);
-}
-.sfu-link {
-  text-decoration: none;
-  color: #E74646;
-}
 
 .fifth-face{
   height: 100%;

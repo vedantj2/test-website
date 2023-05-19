@@ -137,7 +137,7 @@ textarea {
 }
 
 :-moz-placeholder { 
-	color: #fff;
+	color: #000;
 	opacity: 1;
 }
 
