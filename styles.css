@@ -1,364 +1,363 @@
 html,body{
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 body{
-    background-color: #FFE5CA;
+  background-color: #FFE5CA;
 }
 
 body::-webkit-scrollbar {
-    display: none;
-  }
-  
+  display: none;
+}
+
+.first-face{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 5% 8%;
+}
+
+.second-face{
+  background-image: linear-gradient(#FFE5CA,#E74646);
+  height: 100%;
+}
+
+.hero h1{  
+  text-transform: uppercase;
+  font-size: 60px;
+  letter-spacing: 4px;
+  color: #E74646; 
+} 
+span{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.content1 {
+  position: relative; /* make the container positioned relatively */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+.content2 {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+
+.content3 {
+  position: relative; /* make the container positioned relatively */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
+
+.content4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+}
+
+.content5{
+  position: relative; /* make the container positioned relatively */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.path {
+  fill: none;
+  stroke: #E74646;
+  stroke-width: 3px;
+}
+
+.path2 {
+  stroke-width: 3px;
+  stroke: #E74646;
+}
+
+.path3 {
+  stroke: black;
+}
+
+.path4{
+  stroke: black;
+}
+
+.path5{
+  stroke-width: 2px;
+  stroke: black;
+}
+
+.path6{
+  stroke-width: 2px;
+  stroke: black;
+}
+
+.info1{
+  font-family: 'Tisa Sans Pro', sans-serif;
+  letter-spacing: 1px;
+  max-width: 400px;
+  color: black;
+}
+
+.P{
+  color: black;
+  opacity: 0;
+  position: relative;
+  bottom: -40px;
+  transition: all 0.8s ease-out;
+}
+
+.show{
+  opacity: 1;
+  bottom: 0;
+}
+
+
+@media all and (max-width: 500px){
   .first-face{
-    width: 100%;
-    height: 100vh;
+    height: 70vh;
     display: flex;
-    align-items: flex-end;
-    padding: 5% 8%;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .second-face{
-    background-image: linear-gradient(#FFE5CA,#E74646);
-    height: 100%;
+  .hero{
+    margin-top: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
-  
-  .hero h1{  
-    text-transform: uppercase;
-    font-size: 60px;
-    letter-spacing: 4px;
-    color: #E74646; 
-  } 
-  span{
-    font-size: 20px;
-    letter-spacing: 2px;
-  }
-  
   .content1 {
-    position: relative; /* make the container positioned relatively */
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    height: 80vh;
+    align-items: flex-end;
+    height: 70vh;
   }
   .content2 {
     margin-top: 0%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: column; 
     align-items: center;
-    height: 90vh;
+    height: 100vh;
   }
-  
-  .content3 {
-    position: relative; /* make the container positioned relatively */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 20vh;
-  }
-  
+
   .content4 {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60vh;
-  }
-  
-  .content5{
-    position: relative; /* make the container positioned relatively */
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: column; 
     align-items: center;
     height: 80vh;
   }
-  
-  .path {
-    fill: none;
-    stroke: #E74646;
-    stroke-width: 3px;
+
+  .content5{
+    display: flex;
+    flex-direction: column-reverse; 
+    justify-content: space-between; 
+    align-items: center;
+    height: 70vh;
   }
-  
-  .path2 {
-    stroke-width: 3px;
-    stroke: #E74646;
-  }
-  
-  .path3 {
-    stroke: black;
-  }
-  
-  .path4{
-    stroke: black;
-  }
-  
-  .path5{
-    stroke-width: 2px;
-    stroke: black;
-  }
-  
-  .path6{
-    stroke-width: 2px;
-    stroke: black;
-  }
-  
+
   .info1{
-    font-family: 'Tisa Sans Pro', sans-serif;
-    letter-spacing: 1px;
-    max-width: 400px;
-    color: black;
-  }
+      color: black;
+      padding: 30px;
+    } 
+}
+
+
+.third-face{
+  height: 100vh;
+  background-color: #E74646;
+}
+
+.projectGrid{
+  margin: 0;
+  background-color: #E74646;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card{
+  position: relative;
+  cursor: pointer;
+  width: 300px; 
+}
+
+.face1{
   
-  .P{
-    color: black;
-    opacity: 0;
-    position: relative;
-    bottom: -40px;
-    transition: all 0.8s ease-out;
-  }
-  
-  .show{
-    opacity: 1;
-    bottom: 0;
-  }
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #FFE5CA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  transform: translateY(100px);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+.card:hover .face1{
+  background-color: #FA9884;
+  transform: translateY(0);
+  border-radius: 15px 15px 0 0;
+}
+
+.face2{
+  border-radius: 15px;
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  transition: 0.5s;
+  transform: translateY(-100px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+}
+
+.card:hover .face2{
+  transform: translateY(0);
+  border-radius: 0 0 15px 15px;
+}
+
+.imgbox{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.card:hover .imgbox{
+  opacity: 1;
+}
+
+.face1 img{
+  width: 100px;
+}
+
+.Third-face-title{
+  margin: 10px 0 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+
+.para{
+  margin: 0;
+  padding: 0;
+}
+
+.readmore{
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+  padding: 5px;
+  border: 1px solid wheat;
+}
+
+.readmore:hover{
+  background-color: #E74646;
+  color: black;
+}
+
+.text-box{
+  color: #E74646;
+  bottom: 8%;
+}
+
+.text-box .AAA{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.text-box .AAAA{
+  font-size: 190px;
+  line-height: 160px;
+  margin-left: -10px;
+  color: transparent;
+  -webkit-text-stroke: 1px #E74646;
+}
+
+.text-box .AAAAA{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.text-box .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.text-box .AAAAAA{
+  color: #E74646;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: 2px solid #E74646;
+}
 
 
-  @media all and (max-width: 500px){
-    .first-face{
-      height: 70vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .hero{
-      margin-top: 200px;
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-    .content1 {
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-      height: 70vh;
-    }
-    .content2 {
-      margin-top: 0%;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column; 
-      align-items: center;
-      height: 100vh;
-    }
-
-    .content4 {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column; 
-      align-items: center;
-      height: 80vh;
-    }
-
-    .content5{
-      display: flex;
-      flex-direction: column-reverse; 
-      justify-content: space-between; 
-      align-items: center;
-      height: 70vh;
-    }
-
-    .info1{
-        color: black;
-        padding: 30px;
-      } 
-  }
+.sfu-link {
+  overflow: hidden;
+  position: relative;
+}
+.sfu-link::before,
+.sfu-link::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.sfu-link::before {
+  background-color: #FA9884;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.sfu-link::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #FA9884;
+}
+.sfu-link:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.sfu-link:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+.sfu-link span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.sfu-link:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+.sfu-link {
+  text-decoration: none;
+  color: #E74646;
+}
 
 
-  .third-face{
-    height: 100vh;
-    background-color: #E74646;
-  }
-
-  .projectGrid{
-    margin: 0;
-    background-color: #E74646;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .card{
-    position: relative;
-    cursor: pointer;
-    width: 300px; 
-  }
-
-  .face1{
-    
-    position: relative;
-    width: 300px;
-    height: 200px;
-    background-color: #FFE5CA;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    transform: translateY(100px);
-    z-index: 1;
-    border-radius: 15px;
-  }
-
-  .card:hover .face1{
-    background-color: #FA9884;
-    transform: translateY(0);
-    border-radius: 15px 15px 0 0;
-  }
-
-  .face2{
-    border-radius: 15px;
-    position: relative;
-    width: 300px;
-    height: 200px;
-    background-color: wheat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 20px;
-    transition: 0.5s;
-    transform: translateY(-100px);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-  }
-
-  .card:hover .face2{
-    transform: translateY(0);
-    border-radius: 0 0 15px 15px;
-  }
-
-  .imgbox{
-    opacity: 1;
-    transition: 0.5s;
-  }
-
-  .card:hover .imgbox{
-    opacity: 1;
-  }
-
-  .face1 img{
-    width: 100px;
-  }
-
-  .Third-face-title{
-    margin: 10px 0 0;
-    padding: 0;
-    color: black;
-    text-align: center;
-    font-size: 25px;
-  }
-
-  .para{
-    margin: 0;
-    padding: 0;
-  }
-
-  .readmore{
-    margin: 15px 0 0;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: black;
-    padding: 5px;
-    border: 1px solid wheat;
-  }
-
-  .readmore:hover{
-    background-color: #E74646;
-    color: black;
-  }
-
-  .text-box{
-    color: #E74646;
-    bottom: 8%;
-  }
-
-  .text-box .AAA{
-    font-size: 50px;
-    font-weight: 600;
-  }
-
-  .text-box .AAAA{
-    font-size: 190px;
-    line-height: 160px;
-    margin-left: -10px;
-    color: transparent;
-    -webkit-text-stroke: 1px #E74646;
-  }
-
-  .text-box .AAAAA{
-    font-size: 40px;
-    font-weight: 500;
-  }
-
-  .text-box .row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-  }
-
-  .text-box .AAAAAA{
-    color: #E74646;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin-right: 20px;
-    border: 2px solid #E74646;
-  }
-
-
-  .sfu-link {
-    overflow: hidden;
-    position: relative;
-  }
-  .sfu-link::before,
-  .sfu-link::after {
-   content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-  }
-  .sfu-link::before {
-    background-color: #FA9884;
-    height: 2px;
-    bottom: 0;
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  }
-  .sfu-link::after {
-    content: attr(data-replace);
-    height: 100%;
-    top: 0;
-    transform-origin: 100% 50%;
-    transform: translate3d(200%, 0, 0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-    color: #FA9884;
-  }
-  .sfu-link:hover::before {
-    transform-origin: 0% 50%;
-    transform: scaleX(1);
-  }
-  .sfu-link:hover::after {
-    transform: translate3d(0, 0, 0);
-  }
-  .sfu-link span {
-    display: inline-block;
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-  }
-  .sfu-link:hover span {
-    transform: translate3d(-200%, 0, 0);
-  }
-  .sfu-link {
-    text-decoration: none;
-    color: #E74646;
-  }
-
-
-  
