@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,11 +7,13 @@
 }
 
 
-html,body{
+html,
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-body{
+
+body {
   background-color: #FFE5CA;
 }
 
@@ -19,37 +21,40 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.first-face{
+.first-face {
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  padding: 5% 8%;
 }
 
-.second-face{
-  background-image: linear-gradient(#FFE5CA,#E7A67D,#E74646);
+.second-face {
+  background-image: linear-gradient(#FFE5CA, #E7A67D, #E74646);
   height: 100%;
 }
 
-.hero h1{  
+.hero h1 {
   text-transform: uppercase;
   font-size: 60px;
   letter-spacing: 4px;
-  color: #E74646; 
-} 
-span{
+  color: #E74646;
+}
+
+span {
   font-size: 20px;
   letter-spacing: 2px;
 }
 
 .content1 {
-  position: relative; /* make the container positioned relatively */
+  position: relative;
+  /* make the container positioned relatively */
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 80vh;
 }
+
 .content2 {
   margin-top: 0%;
   display: flex;
@@ -59,7 +64,8 @@ span{
 }
 
 .content3 {
-  position: relative; /* make the container positioned relatively */
+  position: relative;
+  /* make the container positioned relatively */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -73,8 +79,9 @@ span{
   height: 60vh;
 }
 
-.content5{
-  position: relative; /* make the container positioned relatively */
+.content5 {
+  position: relative;
+  /* make the container positioned relatively */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -96,28 +103,28 @@ span{
   stroke: black;
 }
 
-.path4{
+.path4 {
   stroke: black;
 }
 
-.path5{
+.path5 {
   stroke-width: 2px;
   stroke: black;
 }
 
-.path6{
+.path6 {
   stroke-width: 2px;
   stroke: black;
 }
 
-.info1{
+.info1 {
   font-family: 'Tisa Sans Pro', sans-serif;
   letter-spacing: 1px;
   max-width: 400px;
   color: black;
 }
 
-.P{
+.P {
   color: black;
   opacity: 0;
   position: relative;
@@ -125,35 +132,38 @@ span{
   transition: all 0.8s ease-out;
 }
 
-.show{
+.show {
   opacity: 1;
   bottom: 0;
 }
 
 
-@media all and (max-width: 500px){
-  .first-face{
+@media all and (max-width: 500px) {
+  .first-face {
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .hero{
+
+  .hero {
     margin-top: 200px;
     margin-left: 30px;
     margin-right: 30px;
   }
+
   .content1 {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     height: 70vh;
   }
+
   .content2 {
     margin-top: 0%;
     display: flex;
     justify-content: space-between;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     height: 100vh;
   }
@@ -161,37 +171,37 @@ span{
   .content4 {
     display: flex;
     justify-content: space-between;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     height: 80vh;
   }
 
-  .content5{
+  .content5 {
     display: flex;
-    flex-direction: column-reverse; 
-    justify-content: space-between; 
+    flex-direction: column-reverse;
+    justify-content: space-between;
     align-items: center;
     height: 70vh;
   }
 
-  .info1{
-      color: black;
-      padding: 30px;
-    } 
+  .info1 {
+    color: black;
+    padding: 30px;
+  }
 }
 
 
 
-.text-box{
+.text-box {
   color: #E74646;
 }
 
-.text-box .AAA{
+.text-box .AAA {
   font-size: 50px;
   font-weight: 600;
 }
 
-.text-box .AAAA{
+.text-box .AAAA {
   font-size: 190px;
   line-height: 160px;
   margin-left: -10px;
@@ -199,19 +209,19 @@ span{
   -webkit-text-stroke: 1px #E74646;
 }
 
-.text-box .AAAAA{
+.text-box .AAAAA {
   font-size: 40px;
   font-weight: 500;
 }
 
-.text-box .row{
+.text-box .row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 30px;
 }
 
-.text-box .AAAAAA{
+.text-box .AAAAAA {
   color: #E74646;
   text-decoration: none;
   padding: 10px 20px;
@@ -220,7 +230,7 @@ span{
 }
 
 
-.fifth-face{
+.fifth-face {
   height: 100%;
   background-image: linear-gradient(#172E36, #000);
   display: flex;
@@ -287,4 +297,3 @@ span{
 .social-links a:hover {
   transform: translateY(-10px);
 }
-
